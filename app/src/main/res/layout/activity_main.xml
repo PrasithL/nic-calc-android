@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="8"
+        android:id="@+id/nicTF"
+        android:textAlignment="gravity"
+        android:gravity="right"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/InputDescription"
+        android:id="@+id/textView"
+
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/nicTF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V"
+        android:id="@+id/textView2"
+        android:layout_marginEnd="23dp"
+        android:layout_alignBaseline="@+id/nicTF"
+        android:layout_alignBottom="@+id/nicTF"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateButton"
+        android:id="@+id/calcBtn"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/nicTF"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/bDayLabel"
+        android:id="@+id/textView3"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/calcBtn"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ageLabel"
+        android:id="@+id/textView4"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/genderLabel"
+        android:id="@+id/textView5"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/ageLabel"
+        android:layout_alignStart="@+id/textView4"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/bDayLabel"
+        android:textColor="#c0147ba0"
+        android:layout_above="@+id/textView4"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ageLabel"
+        android:textColor="#c0147ba0"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/bDayLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/genderLabel"
+        android:textColor="#c0147ba0"
+        android:text=" "
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+</RelativeLayout>
